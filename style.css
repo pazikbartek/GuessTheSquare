@@ -1,0 +1,49 @@
+body{
+    background-color:rgb(156, 156, 218);
+}
+#game{
+    background-color:blue;
+    display:flex;
+    height:68vh;
+    width:75vw;
+    margin-left:17vw;
+    margin-top:4vh;
+    justify-content: space-between;
+}
+#board{
+    background-color:green;
+    display:flex;
+    height:68vh;
+    width:45vw;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-content: space-around;
+}
+#words{
+    background-color:red;
+    height:10vh;
+    width:45vw;
+    margin-left:20vw;
+    text-align:center;
+    font-size:4vw;
+}
+#scores{
+    background-color:yellow;
+    height:68vh;
+    width:20vw; 
+}
+.square{
+    width:10.5vw;
+    height:15vh;
+    background-color:pink;
+}
+.square:nth-child(3) {
+    background-color:black;
+    color:blue;
+    font-size: 5vw;
+    text-align: center;
+}
+.square:nth-child(3) i{
+    padding-top:10%;
+}
+
