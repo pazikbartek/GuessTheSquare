@@ -36,14 +36,17 @@ body{
     width:10.5vw;
     height:15vh;
     background-color:pink;
+    font-size:5vw;
+    text-align:center;
+    cursor:pointer;
 }
-.square:nth-child(3) {
-    background-color:black;
+/* .square:nth-child(3) {
+    background-color:green;
     color:blue;
     font-size: 5vw;
     text-align: center;
-}
-.square:nth-child(3) i{
-    padding-top:10%;
+} */
+.square i{
+    padding-top:8%;
 }
 
