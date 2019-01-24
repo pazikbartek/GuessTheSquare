@@ -5,10 +5,10 @@ class Square{
         "fas fa-moon", "fas fa-moon", "fas fa-dog", "fas fa-dog"];
     }
 
-    addListener(board){ // przypisuje zdarzenia do kwadratow w tablicy
+    addListener(board, score, word){ // przypisuje zdarzenia do kwadratow w tablicy
         board.squares.forEach((square) =>{
-            square.addEventListener("click", function(){
-                board.checkSquares(square);
+            square.addEventListener("click", this.add = function add(){
+                board.checkSquares(square, score, word, add);
             })
         })
     }

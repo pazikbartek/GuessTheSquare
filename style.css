@@ -1,8 +1,26 @@
 body{
     background-color:rgb(156, 156, 218);
 }
+
+@keyframes show{
+    from{
+        opacity:0.1;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes hide{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0.1;
+    }
+}
+
 #game{
-    background-color:blue;
     display:flex;
     height:68vh;
     width:75vw;
@@ -28,9 +46,10 @@ body{
     font-size:4vw;
 }
 #scores{
-    background-color:yellow;
     height:68vh;
     width:20vw; 
+    font-size: 5vw;
+    padding-top:10vh;
 }
 .square{
     width:10.5vw;

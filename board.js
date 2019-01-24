@@ -1,8 +1,8 @@
 class Board{
     constructor(){
         this.clickNumber = 0;
-        this.firstClassName;
-        this.secondClassName;
+        this.first;
+        this.second;
         this.squares = [];
     }
 
@@ -23,41 +23,62 @@ class Board{
         }
     }
 
-    checkSquares(square){ //sprawdza czy gracz trafil 2 takie same pola czy nie
+    checkSquares(square, score, word, add){ //sprawdza czy gracz trafil 2 takie same pola czy nie
         if(this.clickNumber==0){
-            this.firstClassName = square;
-            (square.firstChild).style.opacity = "1";
+
+            this.first = square;
+            console.log(this.first);
+            square.firstChild.style.animation = "show 2s forwards"
             this.clickNumber++;
         }
+
         else if(this.clickNumber == 1){
-            this.secondClassName = square;
-            (square.firstChild).style.opacity = "1";
+            this.second = square;
 
-            if(this.firstClassName.firstChild.className===this.secondClassName.firstChild.className){
-                this.removeSquare();
-            }
-            else{
-                this.leaveSquare();
-            }
 
-            this.clickNumber--;
-            this.secondClassName = null;
-            this.firstClassName = null;
+            if(this.first!==this.second){
+                square.firstChild.style.animation = "show 2s forwards";
 
+                if(this.first.firstChild.className===this.second.firstChild.className){ 
+                    word.words = "Great!"
+                    word.setWord()
+                    score.scores+=100;
+                    score.setScores();
+                    this.removeSquare(add);
+                    
+                }
+                else{
+
+                    word.words = "Try again!"
+                    word.setWord();
+                    this.leaveSquare();
+
+                }
+                word.words = ""
+                this.clickNumber--;
+                this.second = null;
+                this.gowno = null;
+
+            }    
         }
 
     }
 
-    removeSquare(){ //usuniecie pol po odgadnieciu 2 takich samych
+    removeSquare(add){ //usuniecie pol po odgadnieciu 2 takich samych
 
-        this.secondClassName.innerHTML = "";
-        this.firstClassName.innerHTML = "";
+        this.first.firstChild.style.animation = "hide 1s forwards";
+        this.second.firstChild.style.animation = "hide 1s forwards";
+        console.log(this.first);
+        this.first.removeEventListener("click", add);
+        this.second.removeEventListener("click", add);
+
     }
+
 
     leaveSquare(){ // schowanie klockow jezeli nie udalo sie odgadnac
         
-        (this.firstClassName.firstChild).style.opacity = "0.1";
-        (this.secondClassName.firstChild).style.opacity = "0.1";
+        this.second.firstChild.style.animation = "hide 1s forwards";
+        this.first.firstChild.style.animation = "hide 1s forwards";
     }
 
 
