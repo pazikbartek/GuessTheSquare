@@ -1,3 +1,4 @@
-let pole = new Square();
-let tablica = new Board();
-tablica.fillBoard(pole);
+let squares = new Square();
+let board = new Board();
+board.fillBoard(squares);
+squares.addListener(board);
