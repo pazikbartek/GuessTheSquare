@@ -12,8 +12,7 @@ class Board{
 
         for (const square of squares){
 
-            let index = Math.floor((Math.random() * (pole.iconsArray.length-1)) + 0);
-
+            let index = Math.floor((Math.random() * (pole.iconsArray.length)) + 0);
             let icon = document.createElement('i');
             icon.className = `${pole.iconsArray[index]}`;
             icon.style.opacity = "0";
@@ -24,7 +23,7 @@ class Board{
         }
     }
 
-    checkSquares(square, score, word, add){ //sprawdza czy gracz trafil 2 takie same pola czy nie
+    checkSquares(square, score, word, end, add){ //sprawdza czy gracz trafil 2 takie same pola czy nie
 
 
         if(this.clickNumber==0){
@@ -50,20 +49,19 @@ class Board{
                     score.points+=100;
                     score.setPoints();
                     this.removeSquare(add);
-                    
                 }
                 else{
 
                     word.words = "Try again!"
                     word.setWord();
                     this.leaveSquare();
-
                 }
-                score.attemps--;
-                score.setAttemps();
+
+                score.attempts--;
+                score.setAttempts();
+                end.checkScores(score);
                 word.words = ""
                 this.clickNumber--;
-
             }    
         }
 
@@ -87,7 +85,6 @@ class Board{
         this.second.removeEventListener("click", add);
         this.first.style.cursor = "default";
         this.second.style.cursor = "default";
-
     }
 
 
@@ -98,7 +95,6 @@ class Board{
             newIcon.className = `${this.second.firstChild.className}`; //dodawanie nowej animacji do elementu ktory juz mial animacje
             this.second.innerHTML = "";
             this.second.appendChild(newIcon);
-            
         }
 
         this.second.firstChild.style.animation = "hide 1.5s  forwards";

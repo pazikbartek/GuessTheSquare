@@ -11,7 +11,6 @@ body{
         opacity:1;
     }
 }
-
 @keyframes hide{
     from{
         opacity:1;
@@ -30,7 +29,6 @@ body{
         font-size:4.5vw;
     }
 }
-
 @keyframes changeColor{
     from{
         background-color:rgb(134, 134, 134);
@@ -112,8 +110,13 @@ body{
 .attemps{
     width: 13vw;
 }
+.end{
+    font-size: 6vh;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
 .square i.fas.fa-heart{
-    color:rgb(223, 64, 64);
+    color:rgb(165, 0, 0);
 }
 .square i.fas.fa-apple-alt{
     color:rgb(16, 107, 16);

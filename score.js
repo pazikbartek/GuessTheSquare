@@ -1,7 +1,7 @@
 class Score{
     constructor(){
         this.points = 0;
-        this.attemps = 20;
+        this.attempts = 18;
     }
 
     setPoints(){
@@ -9,9 +9,9 @@ class Score{
         pointsDiv.innerHTML = `Score: </br> &nbsp; ${this.points}`;
     }
 
-    setAttemps(){
-        let attempsDiv = document.querySelector('.attemps');
-        attempsDiv.innerHTML = `Attemps: </br> &nbsp; ${this.attemps}`;
+    setAttempts(){
+        let attemptsDiv = document.querySelector('.attempts');
+        attemptsDiv.innerHTML = `Attempts: </br> &nbsp; ${this.attempts}`;
     }
 
 }
