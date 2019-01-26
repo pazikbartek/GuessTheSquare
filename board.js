@@ -76,8 +76,8 @@ class Board{
             this.second.appendChild(newIcon);
         }
 
-        this.first.firstChild.style.animation = "hide 1.5s forwards";
-        this.second.firstChild.style.animation = "hide 1.5s forwards";
+        this.first.firstChild.style.animation = "hide 1s forwards";
+        this.second.firstChild.style.animation = "hide 1s forwards";
         this.first.style.animation = "changeColor 0.4s 0.4s forwards"
         this.second.style.animation = "changeColor 0.4s 0.4s forwards"
         
@@ -97,8 +97,8 @@ class Board{
             this.second.appendChild(newIcon);
         }
 
-        this.second.firstChild.style.animation = "hide 1.5s  forwards";
-        this.first.firstChild.style.animation = "hide 1.5s  forwards";
+        this.second.firstChild.style.animation = "hide 1s  forwards";
+        this.first.firstChild.style.animation = "hide 1s  forwards";
     }
 
 

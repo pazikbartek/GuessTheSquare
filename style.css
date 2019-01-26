@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(rgb(191, 211, 118), rgb(184, 178, 238)) fixed;
-    background-size: contain;
+
 }
 
 @keyframes show{

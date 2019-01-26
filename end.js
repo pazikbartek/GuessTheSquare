@@ -6,7 +6,7 @@ class End{
                 let end = document.createElement('class');
                 end.className = "end";
                 let h1 = document.createElement('H3');
-                h1.innerHTML = `You lost! </br> Your results: ${score.points} points`;
+                h1.innerHTML = `You lost! </br> Your result: ${score.points} points`;
                 let emot = document.createElement('i');
                 emot.className = "fas fa-frown-open";
 
@@ -21,7 +21,7 @@ class End{
                 let end = document.createElement('class');
                 end.className = "end";
                 let h1 = document.createElement('H3');
-                h1.innerHTML = `You won! </br> Your results: ${score.points} points`;
+                h1.innerHTML = `You won! </br> Your result: ${score.points} points`;
                 let emot = document.createElement('i');
                 emot.className = "fas fa-grin-beam";;
 
@@ -38,7 +38,7 @@ class End{
             let end = document.createElement('class');
             end.className = "end";
             let h1 = document.createElement('H3');
-            h1.innerHTML = `You won! </br> Your results: ${score.points} points`;
+            h1.innerHTML = `You won! </br> Your result: ${score.points} points`;
             let emot = document.createElement('i');
             emot.className = "fas fa-grin-beam";
 
