@@ -21,7 +21,7 @@ body{
 }
 @keyframes word{
     from{
-        font-size:2vw;
+        font-size:0vw;
         opacity:0;
     }
     to{
@@ -42,9 +42,9 @@ body{
     }
 }
 
+
 #game{
     display:flex;
-    height:68vh;
     width:75vw;
     margin-left:17vw;
     margin-top:8vh;
@@ -70,7 +70,6 @@ body{
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     color: rgb(36, 36, 36);
-
 }
 #words.wordAnimation{
     animation: "show 2s";
@@ -105,15 +104,25 @@ body{
     box-shadow: 0.3vw 0.3vw 0.3vw #888888;
 }
 .points{
-    width:12vw;
+    width:43%;
 }
-.attemps{
-    width: 13vw;
+.attempts{
+    width: 57%;
 }
 .end{
-    font-size: 6vh;
+    font-size: 4vw;
     font-family: 'Indie Flower', cursive;
     text-align: center;
+}
+.end i.fas.fa-frown-open{
+    color:red;
+    opacity: 0.65;
+    font-size: 8vw;
+}
+.end i.fas.fa-grin-beam{
+    color:green;
+    opacity: 0.65;
+    font-size: 8vw;
 }
 .square i.fas.fa-heart{
     color:rgb(165, 0, 0);
@@ -142,3 +151,73 @@ body{
 .square i.fas.fa-check{
     font-size:3vw;
 }
+
+@media screen and (max-width:1050px){
+    #game{
+        flex-direction: column-reverse;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:3vh;
+        align-items:center;
+        width:85vw;
+    }
+    #words{
+        display:none;
+    }
+    #scores{
+        margin-top:0;
+        margin-bottom:3vh;
+        height:13vh;
+        width:50vw;
+        padding:0;
+        line-height: 7vh;
+        text-align:center;
+        font-size:3.2vw;
+    }
+    #board{
+        width:70vw;
+        height:72vh;
+    }
+    .square{
+        width:15.5vw;
+        height:16.2vh;
+        font-size: 7vw;
+    }
+    .end{
+        padding-top:7vh;
+        font-size:4.75vw;
+    }
+    .end i.fas.fa-frown-open{
+        font-size: 10vw;
+    }
+    .end i.fas.fa-grin-beam{
+        font-size: 10vw;
+    }
+}
+
+
+@media screen and (max-width:730px){
+    #board{
+        width:78vw;
+        height:75vh;
+    }
+    .square{
+        width:17.6vw;
+        height:16.7vh;
+        font-size: 10.5vw;
+    }
+    #scores{
+        font-size: 5.3vw;
+    }
+    .end{
+        padding-top:12vh;
+        font-size: 6.5vw;
+    }
+    .end i.fas.fa-frown-open{
+        font-size: 11.5vw;
+    }
+    .end i.fas.fa-grin-beam{
+        font-size: 11.5vw;
+    }
+}
+
