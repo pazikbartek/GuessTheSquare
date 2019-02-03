@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(rgb(191, 211, 118), rgb(184, 178, 238)) fixed;
+    background-color:rgb(0, 163, 163) /*linear-gradient(rgb(191, 211, 118), rgb(184, 178, 238)) fixed; */
 
 }
 
@@ -31,12 +31,11 @@ body{
 }
 @keyframes changeColor{
     from{
-        background-color:rgb(134, 134, 134);
-        border: 0.4px solid;
+        background-color:rgb(97, 97, 97);
         box-shadow: 0.3vw 0.3vw 0.3vw #888888;
     }
     to{
-        background-color: rgb(160, 204, 178);
+        background-color: rgb(0, 192, 192);;
         border: 0;
         box-shadow: none;
     }
@@ -51,7 +50,7 @@ body{
     justify-content: space-between;
 }
 #board{
-    background-color:rgb(160, 204, 178);
+    background-color:rgb(0, 192, 192);
     display:flex;
     height:68vh;
     width:45vw;
@@ -59,7 +58,6 @@ body{
     flex-wrap:wrap;
     align-content: space-around;
     border-radius:2%;
-    border:1px solid;
 }
 #words{
     height:10vh;
@@ -78,33 +76,37 @@ body{
     height:30vh;
     width:25vw; 
     font-size: 3.3vw;
-    background-color:rgb(160, 204, 178);
+    background-color:rgb(97, 97, 97);
     margin-top:10vh;
-    border-radius:5%;
-    border:1px solid;
+    border-top-left-radius:7%;
+    border-top-right-radius:7%;
+    border-bottom-left-radius: 7%;
+    box-shadow: 0.3vw 0.3vw 0.3vw #424242;
     line-height:9vh;
     padding-top:2vh;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
-    color: rgb(36, 36, 36);
+    color: rgb(209, 209, 209);
     display:flex;
 }
 .square{
     width:10.5vw;
     height:15vh;
-    background-color:rgb(134, 134, 134);
+    background-color:rgb(97, 97, 97);
     font-size:5vw;
     text-align:center;
     cursor:pointer;
-    border-radius:10%;
+    border-top-left-radius:10%;
+    border-top-right-radius:10%;
+    border-bottom-left-radius: 10%;
     display:flex;
     align-items:center;
     justify-content: center;
-    border: 0.4px solid;
-    box-shadow: 0.3vw 0.3vw 0.3vw #888888;
+    box-shadow: 0.3vw 0.3vw 0.3vw #424242;
 }
 .points{
     width:43%;
+    padding-left:1.5%;
 }
 .attempts{
     width: 57%;
@@ -125,13 +127,13 @@ body{
     font-size: 8vw;
 }
 .square i.fas.fa-heart{
-    color:rgb(165, 0, 0);
+    color:rgb(165, 8, 8);
 }
 .square i.fas.fa-apple-alt{
     color:rgb(16, 107, 16);
 }
 .square i.fas.fa-dove{
-    color:rgb(145, 37, 37);
+    color:rgb(117, 28, 28);
 }
 .square i.fas.fa-gem{
     color:silver;
