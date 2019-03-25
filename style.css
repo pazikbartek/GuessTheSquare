@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(0, 163, 163) /*linear-gradient(rgb(191, 211, 118), rgb(184, 178, 238)) fixed; */
+    background-color:rgb(0, 163, 163) 
 
 }
 
@@ -42,14 +42,15 @@ body{
 }
 
 
-#game{
+section{
     display:flex;
     width:75vw;
     margin-left:17vw;
     margin-top:8vh;
     justify-content: space-between;
+    animation: show 1.5s;
 }
-#board{
+main{
     background-color:rgb(0, 180, 180);
     display:flex;
     height:68vh;
@@ -156,7 +157,7 @@ body{
 }
 
 @media screen and (max-width:1050px){
-    #game{
+    section{
         flex-direction: column-reverse;
         margin-left:auto;
         margin-right:auto;
@@ -177,7 +178,7 @@ body{
         text-align:center;
         font-size:3.2vw;
     }
-    #board{
+    main{
         width:70vw;
         height:72vh;
     }
@@ -200,7 +201,7 @@ body{
 
 
 @media screen and (max-width:730px){
-    #board{
+    main{
         width:78vw;
         height:75vh;
     }

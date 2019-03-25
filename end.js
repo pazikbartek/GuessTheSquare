@@ -13,7 +13,7 @@ class End{
                 end.appendChild(h1);
                 end.appendChild(emot);
 
-                let tab = document.querySelector("#board");
+                let tab = document.querySelector("main");
                 tab.innerHTML = "";
                 tab.appendChild(end);
             }
@@ -28,7 +28,7 @@ class End{
                 end.appendChild(h1);
                 end.appendChild(emot);
 
-                let tab = document.querySelector("#board");
+                let tab = document.querySelector("main");
                 tab.innerHTML = "";
                 tab.appendChild(end);
             }
@@ -45,7 +45,7 @@ class End{
             end.appendChild(h1);
             end.appendChild(emot);
 
-            let tab = document.querySelector("#board");
+            let tab = document.querySelector("main");
             tab.innerHTML = "";
             tab.appendChild(end);
         }

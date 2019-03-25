@@ -7,7 +7,7 @@ class Board{
         this.squaresToRemove = [];
     }
 
-    fillBoard(pole){ //wypelnia pole gry ikonkami
+    fillBoard(pole){ //fills the board
         let squares = document.querySelectorAll('.square');
 
         for (const square of squares){
@@ -23,7 +23,7 @@ class Board{
         }
     }
 
-    checkSquares(square, score, word, end, add){ //sprawdza czy gracz trafil 2 takie same pola czy nie
+    checkSquares(square, score, word, end, add){ 
 
 
         if(this.clickNumber==0){
@@ -67,11 +67,11 @@ class Board{
 
     }
 
-    removeSquare(add){ //usuniecie pol po odgadnieciu 2 takich samych
+    removeSquare(add){ 
 
         if (this.second.firstChild.style.animation){
             let newIcon = document.createElement("i");
-            newIcon.className = `${this.second.firstChild.className}`;  //dodawanie nowej animacji do elementu ktory juz mial animacje
+            newIcon.className = `${this.second.firstChild.className}`; 
             this.second.innerHTML = "";
             this.second.appendChild(newIcon);
         }
@@ -88,11 +88,11 @@ class Board{
     }
 
 
-    leaveSquare(){ // schowanie klockow jezeli nie udalo sie odgadnac
+    leaveSquare(){ 
 
         if (this.second.firstChild.style.animation){
             let newIcon = document.createElement("i");
-            newIcon.className = `${this.second.firstChild.className}`; //dodawanie nowej animacji do elementu ktory juz mial animacje
+            newIcon.className = `${this.second.firstChild.className}`; 
             this.second.innerHTML = "";
             this.second.appendChild(newIcon);
         }
