@@ -1,5 +1,5 @@
 This is my first app with JavaScript.
-Technologies:
+Technologies: <br />
 HTML,
 CSS,
 JavaScript
