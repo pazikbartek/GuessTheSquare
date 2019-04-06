@@ -204,6 +204,9 @@ footer{
     .end i.fas.fa-grin-beam{
         font-size: 10vw;
     }
+    footer{
+        display:none;
+    }
 }
 
 
@@ -234,4 +237,29 @@ footer{
         font-size: 11.5vw;
     }
 }
+
+@media screen and (max-width:500px){
+    main{
+        width:90vw;
+        height:100vw;
+    }
+    .square{
+        width:21vw;
+        height:23vw;
+        font-size: 10.5vw;
+    }
+}
+
+@media screen and (max-width:400px){
+    main{
+        width:95vw;
+        height:110vw;
+    }
+    .square{
+        width:22vw;
+        height:24.5vw;
+    }
+}
+
+
 
