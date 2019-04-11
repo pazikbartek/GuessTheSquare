@@ -1,6 +1,6 @@
 body{
-    background-color:rgb(0, 163, 163) 
-
+    background-image: url(tlodobre.jpg);
+    background-size:cover;
 }
 
 @keyframes show{
@@ -164,6 +164,9 @@ footer{
 }
 
 @media screen and (max-width:1050px){
+    body{
+        background-image: url(tlodobre1.jpg);
+    }
     section{
         flex-direction: column-reverse;
         margin-left:auto;
@@ -211,6 +214,9 @@ footer{
 
 
 @media screen and (max-width:730px){
+    body{
+        background-image: url(tlodobre2.jpg);
+    }
     main{
         width:78vw;
         height:75vh;
@@ -239,6 +245,9 @@ footer{
 }
 
 @media screen and (max-width:500px){
+    body{
+        background-image: url(tlodobre3.jpg);
+    }
     main{
         width:90vw;
         height:100vw;
@@ -251,6 +260,9 @@ footer{
 }
 
 @media screen and (max-width:400px){
+    body{
+        background-image: url(tlodobre4.jpg);
+    }
     main{
         width:95vw;
         height:110vw;
