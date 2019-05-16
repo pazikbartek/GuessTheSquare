@@ -9,7 +9,6 @@ class Word{
         if(wordDiv.children[0]!==null){
             wordDiv.innerHTML = "";
         }
-
         let newWord = document.createElement("div");
         newWord.id="child";
         wordDiv.appendChild(newWord);

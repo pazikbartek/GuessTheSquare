@@ -1,5 +1,5 @@
 body{
-    background-image: url(tlodobre.jpg);
+    background-image: url(bgr.jpg);
     background-size:cover;
 }
 
@@ -165,7 +165,7 @@ footer{
 
 @media screen and (max-width:1050px){
     body{
-        background-image: url(tlodobre1.jpg);
+        background-image: url(bgr1.jpg);
     }
     section{
         flex-direction: column-reverse;
@@ -215,7 +215,7 @@ footer{
 
 @media screen and (max-width:730px){
     body{
-        background-image: url(tlodobre2.jpg);
+        background-image: url(bgr2.jpg);
     }
     main{
         width:78vw;
@@ -246,7 +246,7 @@ footer{
 
 @media screen and (max-width:500px){
     body{
-        background-image: url(tlodobre3.jpg);
+        background-image: url(bgr3.jpg);
     }
     main{
         width:90vw;
@@ -261,7 +261,7 @@ footer{
 
 @media screen and (max-width:400px){
     body{
-        background-image: url(tlodobre4.jpg);
+        background-image: url(bgr4.jpg);
     }
     main{
         width:95vw;
